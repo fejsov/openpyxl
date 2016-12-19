@@ -92,6 +92,10 @@ class Workbook(object):
         """Returns the current active sheet."""
         return self.worksheets[self._active_sheet_index]
 
+    def set_active_sheet(self, index = 0):
+        """Sets active sheet to given index."""
+        self._active_sheet_index = index
+
     def create_sheet(self, index = None):
         """Create a worksheet (at an optional index).
 
